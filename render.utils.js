@@ -30,13 +30,13 @@ export function renderCharacterDetail(character) {
     nameEl.textContent = character.name;
     nameEl.classList.add('name');
 
-    speciesEl.textContent = character.species;    
+    speciesEl.textContent = `They are a(n) ${character.species}`;    
     speciesEl.classList.add('species');
 
-    personalityEl.textContent = character.personality;
+    personalityEl.textContent = `They are ${character.personality}`;
     personalityEl.classList.add('personality');
 
-    catchphraseEl.textContent = character.catchphrase;
+    catchphraseEl.textContent = `Their chatchphrase is: '${character.catchphrase}'`;
     catchphraseEl.classList.add('catchphrase');
 
     img.src = `../assets/${character.name}.png`;
